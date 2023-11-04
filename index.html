@@ -1,193 +1,1184 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>Tea Bot</title>
-  <base href="/">
+    <meta charset="utf-8">
+    <title>TangiGuru - Tangible Learning</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--<link rel="icon" type="image/x-icon" href="favicon.ico">-->
-  <!-- Mirrored from demos.creative-tim.com/bs3/material-dashboard-pro/examples/dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Jul 2018 13:04:37 GMT -->
-  <!-- Added by HTTrack -->
-  <meta http-equiv="content-type" content="text/html;charset=utf-8"/><!-- /Added by HTTrack -->
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
-  <meta charset="utf-8"/>
-  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png"/>
-  <link rel="icon" type="image/png" href="../assets/img/Emblem_USJP-1021x1024.png"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-  <title>Material Dashboard PRO by Creative Tim | Premium Bootstrap Admin Template</title>
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
-  <meta name="viewport" content="width=device-width"/>
-
-  <!-- Canonical SEO -->
-  <link rel="canonical" href="http://www.creative-tim.com/product/material-dashboard-pro"/>
-
-  <!--  Social tags      -->
-  <meta name="keywords"
-        content="material dashboard, bootstrap material admin, bootstrap material dashboard, material design admin, material design, creative tim, html dashboard, html css dashboard, web dashboard, freebie, free bootstrap dashboard, css3 dashboard, bootstrap admin, bootstrap dashboard, frontend, responsive bootstrap dashboard, premiu material design admin">
-
-  <meta name="description"
-        content="Material Dashboard PRO is a Premium Material Bootstrap Admin with a fresh, new design inspired by Google's Material Design.">
-
-  <!-- Schema.org markup for Google+ -->
-  <meta itemprop="name" content="Material Dashboard PRO by Creative Tim | Premium Bootstrap Admin Template">
-  <meta itemprop="description"
-        content="Material Dashboard PRO is a Premium Material Bootstrap Admin with a fresh, new design inspired by Google's Material Design.">
-  <meta itemprop="image" content="../../../../s3.amazonaws.com/creativetim_bucket/products/51/opt_mdp_thumbnail.jpg">
-
-  <!-- Twitter Card data -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@creativetim">
-  <meta name="twitter:title" content="Material Dashboard PRO by Creative Tim | Premium Bootstrap Admin Template">
-  <meta name="twitter:description"
-        content="Material Dashboard PRO is a Premium Material Bootstrap Admin with a fresh, new design inspired by Google's Material Design.">
-  <meta name="twitter:creator" content="@creativetim">
-  <meta name="twitter:image"
-        content="../../../../s3.amazonaws.com/creativetim_bucket/products/51/opt_mdp_thumbnail.jpg">
-
-  <!-- Open Graph data -->
-  <meta property="fb:app_id" content="655968634437471">
-  <meta property="og:title" content="Material Dashboard PRO by Creative Tim | Premium Bootstrap Admin Template"/>
-  <meta property="og:type" content="article"/>
-  <meta property="og:url" content="http://www.creative-tim.com/product/material-dashboard-pro"/>
-  <meta property="og:image"
-        content="../../../../s3.amazonaws.com/creativetim_bucket/products/51/opt_mdp_thumbnail.jpg"/>
-  <meta property="og:description"
-        content="Material Dashboard PRO is a Premium Material Bootstrap Admin with a fresh, new design inspired by Google's Material Design."/>
-  <meta property="og:site_name" content="Creative Tim"/>
-
-  <!-- Bootstrap core CSS     -->
-
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
-  <!--<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>-->
-  <!--  Material Dashboard CSS    -->
-  <link href="assets/css/material-dashboard98f3.css?v=1.3.0" rel="stylesheet"/>
-
-  <!--  CSS for Demo Purpose, don't include it in your project     -->
-  <link href="assets/css/demo.css" rel="stylesheet"/>
-
-
-  <!--     Fonts and icons     -->
-  <link href="assets/css/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css"
-        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons"/>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-        rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="assets/css/agency.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
-        type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <link href="assets/css/scroll-bar.css" rel="stylesheet"/>
-  <!--   Core JS Files   -->
-  <script src="assets/js/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
-  <script>
-    var global = global || window;
-    var Buffer = Buffer || [];
-    var process = process || {
-      env: {DEBUG: undefined},
-      version: []
-    };
-  </script>
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/video.css" rel="stylesheet">
 </head>
-<body>
-<app-root></app-root>
-<script type="text/javascript" src="runtime.js"></script><script type="text/javascript" src="polyfills.js"></script><script type="text/javascript" src="styles.js"></script><script type="text/javascript" src="scripts.js"></script><script type="text/javascript" src="vendor.js"></script><script type="text/javascript" src="main.js"></script></body>
 
-<!-- Include a polyfill for ES6 Promises (optional) for IE11, UC Browser and Android browser support SweetAlert -->
-<!--<script src="assets/ajax/libs/core-js/2.4.1/core.js"></script>-->
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
 
-<!-- Library for adding dinamically elements -->
-<!--<script src="assets/js/arrive.min.js" type="text/javascript"></script>-->
+<!-- Navbar Start -->
+<nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+    <a href="index.html" class="navbar-brand ml-lg-3">
+        <img src="img/TeaBotLogo.png" style="width: 100px; height: 100">
 
-<!--&lt;!&ndash; Forms Validations Plugin &ndash;&gt;-->
-<!--<script src="assets/js/jquery.validate.min.js"></script>-->
+    </a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+        <div class="navbar-nav m-auto py-0">
+            <a href="#home" class="nav-item nav-link active">Home</a>
+            <a href="#about" class="nav-item nav-link">About</a>
+            <a href="#qualification" class="nav-item nav-link">Milestones</a>
 
-<!--&lt;!&ndash;  Plugin for Date Time Picker and Full Calendar Plugin&ndash;&gt;-->
-<!--<script src="assets/js/moment.min.js"></script>-->
+            <a href="#service" class="nav-item nav-link">Team</a>
+            <a href="#skill" class="nav-item nav-link">Achivements</a>
+            <a href="#documents" class="nav-item nav-link">Documents</a>
+            <a href="#contact" class="nav-item nav-link">Contact</a>
+        </div>
+    </div>
+</nav>
+<!-- Navbar End -->
 
-<!--&lt;!&ndash;  Charts Plugin, full documentation here: https://gionkunz.github.io/chartist-js/ &ndash;&gt;-->
-<!--<script src="assets/js/chartist.min.js"></script>-->
 
-<!--&lt;!&ndash;  Plugin for the Wizard, full documentation here: https://github.com/VinceG/twitter-bootstrap-wizard &ndash;&gt;-->
-<!--<script src="assets/js/jquery.bootstrap-wizard.js"></script>-->
+<!--/*    position:relative;*/-->
+<!--/*    padding:0px;*/-->
 
-<!--&lt;!&ndash;  Notifications Plugin, full documentation here: http://bootstrap-notify.remabledesigns.com/    &ndash;&gt;-->
-<!--<script src="assets/js/bootstrap-notify.js"></script>-->
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="position:relative;padding:0px;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
 
-<!--&lt;!&ndash;   Sharrre Library    &ndash;&gt;-->
-<!--<script src="assets/js/jquery.sharrre.js"></script>-->
 
-<!--&lt;!&ndash;  Plugin for the DateTimePicker, full documentation here: https://eonasdan.github.io/bootstrap-datetimepicker/ &ndash;&gt;-->
-<!--<script src="assets/js/bootstrap-datetimepicker.js"></script>-->
+            <div class="modal-body" style="padding: 0px; position: relative">
 
-<!--&lt;!&ndash; Vector Map plugin, full documentation here: http://jvectormap.com/documentation/ &ndash;&gt;-->
-<!--<script src="assets/js/jquery-jvectormap.js"></script>-->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                </div>
 
-<!--&lt;!&ndash; Sliders Plugin, full documentation here: https://refreshless.com/nouislider/ &ndash;&gt;-->
-<!--<script src="assets/js/nouislider.min.js"></script>-->
 
-<!--  Google Maps Plugin    -->
-<!--<script type="text/javascript"-->
-<!--src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1_8C5Xz9RpEeJSaJ3E_DeBv8i7j_p6Aw"></script>-->
+            </div>
 
-<!--&lt;!&ndash;  Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select &ndash;&gt;-->
-<!--<script src="assets/js/jquery.select-bootstrap.js"></script>-->
+        </div>
+    </div>
+</div>
 
-<!--&lt;!&ndash;  DataTables.net Plugin, full documentation here: https://datatables.net/    &ndash;&gt;-->
-<!--<script src="assets/js/jquery.datatables.js"></script>-->
 
-<!--&lt;!&ndash; Sweet Alert 2 plugin, full documentation here: https://limonte.github.io/sweetalert2/ &ndash;&gt;-->
-<!--<script src="assets/js/sweetalert2.js"></script>-->
+<!-- Video Modal Start -->
+<!--<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"-->
+<!--     aria-hidden="true">-->
+<!--    <div class="modal-dialog" role="document">-->
+<!--        <div class="modal-content">-->
+<!--            <div class="modal-body">-->
+<!--                <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                    <span aria-hidden="true">&times;</span>-->
+<!--                </button>-->
+<!--                &lt;!&ndash; 16:9 aspect ratio &ndash;&gt;-->
+<!--                <div class="embed-responsive embed-responsive-16by9">-->
+<!--                    <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"-->
+<!--                            allow="autoplay"></iframe>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!-- Video Modal End -->
 
-<!--&lt;!&ndash; Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput &ndash;&gt;-->
-<!--<script src="assets/js/jasny-bootstrap.min.js"></script>-->
 
-<!--&lt;!&ndash;  Full Calendar Plugin, full documentation here: https://github.com/fullcalendar/fullcalendar    &ndash;&gt;-->
-<!--<script src="assets/js/fullcalendar.min.js"></script>-->
+<!-- Header Start -->
+<div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+                <img class="img-fluid w-40 rounded-circle" src="img/TeaBot.png" alt="" style="width: 425px; height: 425px;">
+            </div>
+            <div class="col-lg-7 text-center text-lg-left">
+                <h3 class="text-white font-weight-normal mb-3">We're</h3>
+                <h1 class="display-3  text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">TeaBot</h1>
+                <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                <div class="typed-text d-none">Liquid Fertilizer, Fertilizer Bot, Tea Palnts</div>
+                <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                    <!--                        <a href="" class="btn btn-outline-light mr-5">Download CV</a>-->
+<!--                    <button type="button" class="btn-play" data-toggle="modal"-->
+<!--                            data-src="https://youtu.be/embed/lnfTjfY5AhM" data-target="#videoModal">-->
+<!--                        <span></span>-->
+<!--                    </button>-->
+                    <div>
+                        <div>
+                            <button style="background-color: white; border-radius: 40px 40px 40px 40px;position: absolute;margin-left:32px;margin-top: 22px; animation: pulse-border 1500ms ease-out infinite;" type="button" class=" btn btn-primary video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/lnfTjfY5AhM" data-target="#myModal">
+                                <i style="color: rgb(255,255,255)" class="fa fa-play" aria-hidden="true"></i>
+                            </button>
 
-<!--&lt;!&ndash; Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  &ndash;&gt;-->
-<!--<script src="assets/js/jquery.tagsinput.js"></script>-->
+                        </div>
+                        <div>
+                            <button style="background-color: white; border-radius: 40px 40px 40px 40px; " type="button" class=" btn btn-primary video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/lnfTjfY5AhM" data-target="#myModal">
+                                <i style="color: #0e1266" class="fa fa-play" aria-hidden="true"></i>
+                            </button>
+                        </div>
 
-<!--&lt;!&ndash; Material Dashboard javascript methods &ndash;&gt;-->
-<!--<script src="assets/js/material-dashboard98f3.js"></script>-->
+                    </div>
+                    <!-- Button trigger modal -->
 
-<!--&lt;!&ndash; Material Dashboard DEMO methods, don't include it in your project! &ndash;&gt;-->
-<!--<script src="assets/js/demo.js"></script>-->
 
-<!--<script type="text/javascript">-->
-<!--$(document).ready(function () {-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Header End -->
 
-<!--// Javascript method's body can be found in assets/js/demos.js-->
-<!--demo.initDashboardPageCharts();-->
 
-<!--demo.initVectorMap();-->
-<!--});-->
-<!--</script>-->
+<!-- About Start -->
+<div class="container-fluid py-5" id="about">
+    <div class="container">
+        <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
+            <h1 class="position-absolute text-uppercase text-primary">About the Project</h1>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-5 pb-4 pb-lg-0">
+                <img class="img-fluid rounded w-100" src="img/blockDark.png" alt="">
+            </div>
+            <div class="col-lg-7">
+                <h3 class="mb-4">Automated Fertilizing Robot for Tea Plantations</h3>
+                <p>Tea cultivation is a vital industry, and optimizing the
+                     farming process is crucial for ensuring high-quality yield. Introducing TeaFertico,
+                      an innovative solution revolutionizing tea plantation management through automation. 
+                      TeaFertico is an IoT-based automated fertilizing robot designed specifically for tea 
+                      farmers, aiming to enhance productivity, reduce labor, and promote sustainable agricultural practices. </p>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Start -->
+    <div class="container-fluid pt-5 pb-3" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-2">
+                    <ul class="list-inline mb-4" id="portfolio-flters">
+                        <li class="btn btn-sm btn-outline-primary m-1 active" data-filter=".first">Background</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Research Gap</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Problem</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".fourth">Objectives</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-container" style="height: 136px;">
+                <div class="col-lg-12 col-md-6 mb-4 portfolio-item first">
+                    <p style="text-align: center">The agricultural sector, particularly tea plantations, has seen significant advancements in automation technology. Traditional farming practices are being revolutionized through automation, offering farmers efficient ways to manage their crops. In this context, the development of an Automated Fertilizing Robot tailored for tea plantations represents a crucial step forward.</p>
+                </div>
+                <div class="col-lg-12 col-md-6 mb-4 portfolio-item second">
+                    <p style="text-align: center">In the field of automated fertilizing robots for tea plantations, 
+                        substantial research gaps persist. Existing studies lack a comprehensive focus on robots specifically
+                         designed for tea cultivation, leading to an inadequate understanding of their efficacy in optimizing 
+                         fertilizer application. Moreover, there is a noticeable absence of standardized evaluation methods,
+                          hindering accurate assessments of these robots' performance in real tea plantation environments. 
+                          . Additionally, while other domains have extensively studied the collaborative and playful
+                           aspects of human-robot interaction, such research is lacking in the context of tea plantation automation. 
+                           Furthermore, insufficient attention has been given to assessing the functionality of automated fertilizing 
+                           robots concerning diverse soil types, weather conditions, and tea plant varieties. Addressing these research 
+                           gaps is essential to unlock the full potential of automated fertilizing robots, enabling the development of
+                            practical, efficient, and user-friendly solutions tailored to the specific challenges of tea cultivation. </p>
+                </div>
 
-<script
-  src='//static.codepen.io/assets/editor/live/console_runner-ce3034e6bde3912cc25f83cccb7caa2b0f976196f2f2d52303a462c826d54a73.js'></script>
-<script
-  src='//static.codepen.io/assets/editor/live/css_live_reload_init-890dc39bb89183d4642d58b1ae5376a0193342f9aed88ea04330dc14c8d52f55.js'></script>
-<meta name="robots" content="noindex">
-<link rel="shortcut icon" type="image/x-icon"
-      href="//static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico"/>
-<link rel="mask-icon" type=""
-      href="//static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg"
-      color="#111"/>
-<link rel="canonical" href="https://codepen.io/mselmany/pen/vBeLG"/>
-<link
-  href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,600,900|Open+Sans+Condensed:300,300italic,700&subset=latin,latin-ext'
-  rel='stylesheet' type='text/css'>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js'></script>
-<!--<style class="cp-pen-styles"></style>-->
-<script
-  src='//static.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script>
+                <div class="col-lg-12 col-md-6 mb-4 portfolio-item third">
+                    <p style="text-align: center">In the realm of agricultural technology, a pressing research problem 
+                        revolves around the evolving use of digital devices by farmers. While technology is 
+                        becoming ubiquitous, particularly in tea plantations, there is a crucial need to bridge 
+                        the gap between digital interfaces and effective agricultural practices. Presently, 
+                        farmers often resort to smartphones for various tasks, including agricultural management. 
+                        However, the complexity of tea plantation processes demands a more intuitive approach. 
+                        Traditional touchscreens fall short in providing the necessary hands-on experience required for 
+                        tasks like fertilizing. To enhance the efficiency and learning curve for farmers, there is 
+                        a compelling requirement for interfaces specifically tailored for tea cultivation. Finding 
+                        innovative solutions that combine practical elements with agricultural technology is imperative for 
+                        optimizing tea plantation practices and ensuring a sustainable and productive future for farmers. </p>
+                </div>
+
+                <div class="col-lg-12 col-md-6 mb-4 portfolio-item fourth">
+                    <h5 style="text-align: center;margin-bottom: 0px;">In the play. TeaBot supports for the following
+                        sub-objectives. </h5>
+                    <div style="display: flex; justify-content: center;">
+                        <ul>
+                            <li>Robot which can travel with computer vision path navigation</li>
+                            <li>Stem identification and watering</li>
+                            <li>Movemet of the Robot arm to the precise location of the palnt</li>
+                            <li>Manual controll</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio End -->
+</div>
+<!-- About End -->
+
+
+<!-- Submissions Start -->
+<div class="container-fluid py-5" id="qualification">
+    <div class="container">
+        <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Milestones</h1>
+            <h1 class="position-absolute text-uppercase text-primary">Milestones</h1>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6" style="display: flex; justify-content: center;">
+                <!--                <h3 class="mb-4">My Education</h3>-->
+                <div class="border-left border-primary pt-2 pl-4 ml-2">
+                    <div class="position-relative mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 class="font-weight-bold mb-1">Topic Assement</h5>
+                        <p class="mb-2">12<sup>th</sup> December 2021</p>
+                        <!--                        <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum-->
+                        <!--                            est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet-->
+                        <!--                            lorem diam</p>-->
+                    </div>
+                    <div class="position-relative mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 class="font-weight-bold mb-1">Project Charter Submission</h5>
+                        <p class="mb-2">12<sup>th</sup> January 2022</p>
+                        <!--                        <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum-->
+                        <!--                            est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet-->
+                        <!--                            lorem diam</p>-->
+                    </div>
+                    <div class="position-relative mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 class="font-weight-bold mb-1">Project Proposal Presentation</h5>
+                        <p class="mb-2">2<sup>nd</sup> February 2022</p>
+                        <!--                        <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum-->
+                        <!--                            est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet-->
+                        <!--                            lorem diam</p>-->
+                    </div>
+
+                    <div class="position-relative mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 class="font-weight-bold mb-1">Project Proposal Report</h5>
+                        <p class="mb-2">11<sup>th</sup> February 2022</p>
+
+                    </div>
+                    <div class="position-relative mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 class="font-weight-bold mb-1">Status Document 1</h5>
+                        <p class="mb-2">13<sup>th</sup> May 2022</p>
+
+                    </div>
+                    <div class="position-relative mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 class="font-weight-bold mb-1">Progres Presentation 1</h5>
+                        <p class="mb-2">27<sup>th</sup> May 2022</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6" style="display: flex; justify-content: center;">
+
+                <div class="border-left border-primary pt-2 pl-4 ml-2">
+                    <div class="position-relative mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 class="font-weight-bold mb-1">Research Paper Draft Submission</h5>
+                        <p class="mb-2">30<sup>th</sup> June 2022</p>
+
+                    </div>
+                    <div class="position-relative mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 class="font-weight-bold mb-1">Final Report Submission</h5>
+                        <p class="mb-2">09<sup>th</sup> September 2022</p>
+
+                    </div>
+                    <div class="position-relative mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 class="font-weight-bold mb-1">Progres Presentation 2</h5>
+                        <p class="mb-2">11<sup>th</sup> October 2022</p>
+                    </div>
+                    <div class="position-relative mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 class="font-weight-bold mb-1">Website Assement</h5>
+                        <p class="mb-2">14<sup>th</sup> November 2022</p>
+                    </div>
+                    <div class="position-relative mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 class="font-weight-bold mb-1">Logbook and Status Document</h5>
+                        <p class="mb-2">14<sup>th</sup> November 2022</p>
+                    </div>
+                    <div class="position-relative mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 class="font-weight-bold mb-1">Final Presentation and Viva</h5>
+                        <p class="mb-2">14<sup>th</sup> November 2022</p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Submissions -->
+
+<!-- Team -->
+<div class="container-fluid pt-5" id="service">
+    <div class="container">
+        <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Our Team</h1>
+            <h1 class="position-absolute text-uppercase text-primary">Our Team</h1>
+        </div>
+        <div class="row pb-3">
+            <div class="col-lg-4 col-md-6 text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                    <!--                    <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>-->
+                    <img src="img/1.png" style="width: 200px; height: auto;">
+                </div>
+                <h4 class="font-weight-bold m-0">Shashka Lokuliyana</h4>
+                <a class="border-bottom border-primary text-decoration-none">Supervisor</a>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                    <!--                    <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>-->
+                    <img src="img/2.png" style="width: 200px; height: auto;">
+                </div>
+                <h4 class="font-weight-bold m-0">Narmada Gamage</h4>
+                <a class="border-bottom border-primary text-decoration-none">Co-Supervisor</a>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                    <!--                    <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>-->
+                    <img src="img/3.png" style="width: 200px; height: auto;">
+                </div>
+                <h4 class="font-weight-bold m-0">Rajitha De Silva</h4>
+                <a class="border-bottom border-primary text-decoration-none">External-Supervisor</a>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                    <!--                    <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>-->
+                    <img src="img/4.png" style="width: 200px; height: auto;">
+                </div>
+                <h4 class="font-weight-bold m-0">Imalka Gunawardana</h4>
+                <a class="border-bottom border-primary text-decoration-none">Team Leader - Researcher</a>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                    <!--                    <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>-->
+                    <img src="img/5.png" style="width: 200px; height: auto;">
+                </div>
+                <h4 class="font-weight-bold m-0">Varnavi Perera</h4>
+                <a class="border-bottom border-primary text-decoration-none">Researcher</a>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                    <!--                    <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>-->
+                    <img src="img/6.png" style="width: 200px; height: auto;">
+                </div>
+                <h4 class="font-weight-bold m-0">Thulya Premathilake</h4>
+                <a class="border-bottom border-primary text-decoration-none">Researcher</a>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center mb-5"></div>
+            <div class="col-lg-4 col-md-6 text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                    <!--                    <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>-->
+                    <img src="img/7.png" style="width: 200px; height: auto;">
+                </div>
+                <h4 class="font-weight-bold m-0">Gayan Bamunusinghe</h4>
+                <a class="border-bottom border-primary text-decoration-none">Researcher</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Team -->
+
+
+<!-- Skill Start-->
+<div class="container-fluid py-5" id="skill">
+    <div class="container">
+        <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Achivements</h1>
+            <h1 class="position-absolute text-uppercase text-primary">What We Achieved</h1>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="skill mb-4" style="display: flex; justify-content: center">
+
+                    <div class="col-lg-10 col-md-6 text-center mb-5">
+                        <div class="d-flex align-items-center justify-content-center mb-4">
+                            <!--                    <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>-->
+                            <img src="img/ICCNT.png" style="width: 200px; height: auto;">
+                        </div>
+                        <h6 class="font-weight-bold m-0">IEEE Robotic Computing 2023 The Hills Hotel
+                            Laguna Hills, California
+                            </h6>
+                        <a class="border-bottom border-primary text-decoration-none">H5 index: 25</a>
+                        <p>Research paper accepted for the IRC 2023 conference</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="skill mb-4" style="display: flex; justify-content: center">
+
+                    <div class="col-lg-10 col-md-6 text-center mb-5">
+                        <div class="d-flex align-items-center justify-content-center mb-4">
+                            <!--                    <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>-->
+                            <img src="img/icac.png" style="width: 200px; height: auto;">
+                        </div>
+                        <h6 class="font-weight-bold m-0">25th International Multitopic Conference (INMIC)</h6>
+                        <a class="border-bottom border-primary text-decoration-none">H5 index: 22</a>
+                        <p>Research paper accepted for the INMIC conference</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Skill End-->
+
+
+<!-- Portfolio Start -->
+<div class="container-fluid pt-5 pb-3" id="documents">
+    <div class="container">
+        <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Documents</h1>
+            <h1 class="position-absolute text-uppercase text-primary">Documents</h1>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center mb-2">
+                <ul class="list-inline mb-4" id="portfolio-flters">
+                    <li class="btn btn-sm btn-outline-primary m-1 active" data-filter="*">All</li>
+                    <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Documents</li>
+                    <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Presentations</li>
+                    <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Research</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row portfolio-container">
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4 portfolio-item first"
+                     style="display: flex; justify-content: center;">
+                    <div class="position-relative overflow-hidden mb-2"
+                         style="border: solid 2px #e5e8eb; height: 200px; border-radius:10px;width: 200px;">
+                        <!--                                <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">-->
+                        <!--                                <h1>Hello</h1>-->
+
+                        <div style="display: flex; justify-content: center;padding-top: 10px;">
+                            <h6>Topic Assement Form</h6>
+                        </div>
+                        <div style="display: flex; justify-content: center;padding-top: 20px;">
+                            <i class="fas fa-file-pdf fa-4x" style="color: rgba(126,119,119,0.59)"></i>
+                        </div>
+                        <div class="  d-flex align-items-center justify-content-center" style="padding-top: 30px;">
+                            <a href="https://github.com/lakizuru/TangiGuru-Research-Docs/raw/main/Topic_Assement_TangiGuru.pdf"> <i
+                                    class="fa fa-arrow-circle-down text-black-50" style="font-size: 30px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 portfolio-item first"
+                     style="display: flex; justify-content: center;">
+                    <div class="position-relative overflow-hidden mb-2"
+                         style="border: solid 2px #e5e8eb; height: 200px; border-radius:10px;width: 200px;">
+                        <!--                                <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">-->
+                        <!--                                <h1>Hello</h1>-->
+
+                        <div style="display: flex; justify-content: center;padding-top: 10px;">
+                            <h6>Project Charter</h6>
+                        </div>
+                        <div style="display: flex; justify-content: center;padding-top: 20px;">
+                            <i class="fas fa-file-pdf fa-4x" style="color: rgba(126,119,119,0.59)"></i>
+                        </div>
+                        <div class="  d-flex align-items-center justify-content-center" style="padding-top: 30px;">
+                            <a href="https://github.com/lakizuru/TangiGuru-Research-Docs/raw/main/TangiGuru_Project_Charter.pdf"> <i
+                                    class="fa fa-arrow-circle-down text-black-50" style="font-size: 30px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 portfolio-item first"
+                     style="display: flex; justify-content: center;">
+                    <div class="position-relative overflow-hidden mb-2"
+                         style="border: solid 2px #e5e8eb; height: 200px; border-radius:10px;width: 200px;">
+                        <!--                                <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">-->
+                        <!--                                <h1>Hello</h1>-->
+
+                        <div style="display: flex; justify-content: center;padding-top: 10px;">
+                            <h6>Project Proposal Reports</h6>
+                        </div>
+                        <div style="display: flex; justify-content: center;padding-top: 20px;">
+                            <i class="fas fa-file-pdf fa-4x" style="color: rgba(126,119,119,0.59)"></i>
+                        </div>
+                        <div class="  d-flex align-items-center justify-content-center" style="padding-top: 30px;">
+                            <!--                            <a href="http://192.168.1.4/tangiWebSite/Topic_Assement_TangiGuru.pdf"> <i class="fa fa-arrow-circle-down text-black-50" style="font-size: 30px;"></i></a>-->
+                            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal"
+                                    data-target="#exampleModalCenter"
+                                    style="width: 25px;height: 25px; background-color: #7F7F7F; border:#7F7F7F; padding-bottom: 25px;padding-top: 0px;padding-left: 15px;padding-right: 15px;">
+                                <strong><span style="font-size: large; justify-content: center; display: flex">+</span></strong>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 mb-4 portfolio-item first"
+                     style="display: flex; justify-content: center;">
+                    <div class="position-relative overflow-hidden mb-2"
+                         style="border: solid 2px #e5e8eb; height: 200px; border-radius:10px;width: 200px;">
+                        <!--                                <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">-->
+                        <!--                                <h1>Hello</h1>-->
+
+                        <div style="display: flex; justify-content: center;padding-top: 10px;">
+                            <h6>Status Document 1</h6>
+                        </div>
+                        <div style="display: flex; justify-content: center;padding-top: 20px;">
+                            <i class="fas fa-file-pdf fa-4x" style="color: rgba(126,119,119,0.59)"></i>
+                        </div>
+                        <div class="  d-flex align-items-center justify-content-center" style="padding-top: 30px;">
+                            <!--                            <a href="http://192.168.1.4/tangiWebSite/Topic_Assement_TangiGuru.pdf"> <i-->
+                            <!--                                    class="fa fa-arrow-circle-down text-black-50" style="font-size: 30px;"></i></a>-->
+                            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal"
+                                    data-target="#exampleModalCenter1"
+                                    style="width: 25px;height: 25px; background-color: #7F7F7F; border:#7F7F7F; padding-bottom: 25px;padding-top: 0px;padding-left: 15px;padding-right: 15px;">
+                                <strong><span style="font-size: large; justify-content: center; display: flex">+</span></strong>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4 portfolio-item first"
+                     style="display: flex; justify-content: center;">
+                    <div class="position-relative overflow-hidden mb-2"
+                         style="border: solid 2px #e5e8eb; height: 200px; border-radius:10px;width: 200px;">
+                        <!--                                <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">-->
+                        <!--                                <h1>Hello</h1>-->
+
+                        <div style="display: flex; justify-content: center;padding-top: 10px;">
+                            <h6>Final Reports</h6>
+                        </div>
+                        <div style="display: flex; justify-content: center;padding-top: 20px;">
+                            <i class="fas fa-file-pdf fa-4x" style="color: rgba(126,119,119,0.59)"></i>
+                        </div>
+                        <div class="  d-flex align-items-center justify-content-center" style="padding-top: 30px;">
+                            <!--                            <a href="http://192.168.1.4/tangiWebSite/Topic_Assement_TangiGuru.pdf"> <i-->
+                            <!--                                    class="fa fa-arrow-circle-down text-black-50" style="font-size: 30px;"></i></a>-->
+                            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal"
+                                    data-target="#exampleModalCenter2"
+                                    style="width: 25px;height: 25px; background-color: #7F7F7F; border:#7F7F7F; padding-bottom: 25px;padding-top: 0px;padding-left: 15px;padding-right: 15px;">
+                                <strong><span style="font-size: large; justify-content: center; display: flex">+</span></strong>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4 portfolio-item first"
+                     style="display: flex; justify-content: center;">
+                      <div class="position-relative overflow-hidden mb-2"
+                         style="border: solid 2px #e5e8eb; height: 200px; border-radius:10px;width: 200px;">
+                        <!--                                <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">-->
+                        <!--                                <h1>Hello</h1>-->
+
+                        <div style="display: flex; justify-content: center;padding-top: 10px;">
+                            <h6>Status Document 2</h6>
+                        </div>
+                        <div style="display: flex; justify-content: center;padding-top: 20px;">
+                            <i class="fas fa-file-pdf fa-4x" style="color: rgba(126,119,119,0.59)"></i>
+                        </div>
+                        <div class="  d-flex align-items-center justify-content-center" style="padding-top: 30px;">
+                            <!--                            <a href="http://192.168.1.4/tangiWebSite/Topic_Assement_TangiGuru.pdf"> <i-->
+                            <!--                                    class="fa fa-arrow-circle-down text-black-50" style="font-size: 30px;"></i></a>-->
+                            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal"
+                                    data-target="#exampleModalCenter3"
+                                    style="width: 25px;height: 25px; background-color: #7F7F7F; border:#7F7F7F; padding-bottom: 25px;padding-top: 0px;padding-left: 15px;padding-right: 15px;">
+                                <strong><span style="font-size: large; justify-content: center; display: flex">+</span></strong>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 portfolio-item first"
+                     style="display: flex; justify-content: center;">
+                    <div class="position-relative overflow-hidden mb-2"
+                         style="border: solid 2px #e5e8eb; height: 200px; border-radius:10px;width: 200px;">
+                        <!--                                <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">-->
+                        <!--                                <h1>Hello</h1>-->
+
+                        <div style="display: flex; justify-content: center;padding-top: 10px;">
+                            <h6>Log Books</h6>
+                        </div>
+                        <div style="display: flex; justify-content: center;padding-top: 20px;">
+                            <i class="fas fa-file-pdf fa-4x" style="color: rgba(126,119,119,0.59)"></i>
+                        </div>
+                        <div class="  d-flex align-items-center justify-content-center" style="padding-top: 30px;">
+                            <!--                            <a href="http://192.168.1.4/tangiWebSite/Topic_Assement_TangiGuru.pdf"> <i-->
+                            <!--                                    class="fa fa-arrow-circle-down text-black-50" style="font-size: 30px;"></i></a>-->
+                            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal"
+                                    data-target="#exampleModalCenter4"
+                                    style="width: 25px;height: 25px; background-color: #7F7F7F; border:#7F7F7F; padding-bottom: 25px;padding-top: 0px;padding-left: 15px;padding-right: 15px;">
+                                <strong><span style="font-size: large; justify-content: center; display: flex">+</span></strong>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--Presentaitons-->
+                <div class="col-lg-3 col-md-6 mb-4 portfolio-item second"
+                     style="display: flex; justify-content: center;">
+                    <div class="position-relative overflow-hidden mb-2"
+                         style="border: solid 2px #e5e8eb; height: 200px; border-radius:10px;width: 200px;">
+                        <!--                                <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">-->
+                        <!--                                <h1>Hello</h1>-->
+
+                        <div style="display: flex; justify-content: center;padding-top: 10px;">
+                            <h6>Proposal Presentation</h6>
+                        </div>
+                        <div style="display: flex; justify-content: center;padding-top: 20px;">
+                            <i class="fas fa-file-pdf fa-4x" style="color: rgba(126,119,119,0.59)"></i>
+                        </div>
+                        <div class="  d-flex align-items-center justify-content-center" style="padding-top: 30px;">
+                            <a href="https://github.com/IT20011970/TeaBot-Documents/raw/main/Presentation/Proposal_Presentation/Proposal%20Presentation_2023-044.pptx"> <i
+                                    class="fa fa-arrow-circle-down text-black-50" style="font-size: 30px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 portfolio-item second"
+                     style="display: flex; justify-content: center;">
+                    <div class="position-relative overflow-hidden mb-2"
+                         style="border: solid 2px #e5e8eb; height: 200px; border-radius:10px;width: 200px;">
+                        <!--                                <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">-->
+                        <!--                                <h1>Hello</h1>-->
+
+                        <div style="display: flex; justify-content: center;padding-top: 10px;">
+                            <h6>Progress Presentation 1</h6>
+                        </div>
+                        <div style="display: flex; justify-content: center;padding-top: 20px;">
+                            <i class="fas fa-file-pdf fa-4x" style="color: rgba(126,119,119,0.59)"></i>
+                        </div>
+                        <div class="  d-flex align-items-center justify-content-center" style="padding-top: 30px;">
+                            <a href="https://github.com/IT20011970/TeaBot-Documents/raw/main/Presentation/Progress_Presentation_1/Progress%20Presentation%20-%201%202023-044.pptx"> <i
+                                    class="fa fa-arrow-circle-down text-black-50" style="font-size: 30px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-3 col-md-6 mb-4 portfolio-item second"
+                     style="display: flex; justify-content: center;">
+                    <div class="position-relative overflow-hidden mb-2"
+                         style="border: solid 2px #e5e8eb; height: 200px; border-radius:10px;width: 200px;">
+                 
+
+                        <div style="display: flex; justify-content: center;padding-top: 10px;">
+                            <h6>NBQSA Round 1</h6>
+                        </div>
+                        <div style="display: flex; justify-content: center;padding-top: 20px;">
+                            <i class="fas fa-file-pdf fa-4x" style="color: rgba(126,119,119,0.59)"></i>
+                        </div>
+                        <div class="  d-flex align-items-center justify-content-center" style="padding-top: 30px;">
+                            <a href="https://github.com/lakizuru/TangiGuru-Research-Docs/raw/main/NBQSA_Presentation.pdf"> <i
+                                    class="fa fa-arrow-circle-down text-black-50" style="font-size: 30px;"></i></a>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="col-lg-3 col-md-6 mb-4 portfolio-item second"
+                     style="display: flex; justify-content: center;">
+                    <div class="position-relative overflow-hidden mb-2"
+                         style="border: solid 2px #e5e8eb; height: 200px; border-radius:10px;width: 200px;">
+                        <!--                                <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">-->
+                        <!--                                <h1>Hello</h1>-->
+
+                        <div style="display: flex; justify-content: center;padding-top: 10px;">
+                            <h6>Progress Presentation 2</h6>
+                        </div>
+                        <div style="display: flex; justify-content: center;padding-top: 20px;">
+                            <i class="fas fa-file-pdf fa-4x" style="color: rgba(126,119,119,0.59)"></i>
+                        </div>
+                        <div class="  d-flex align-items-center justify-content-center" style="padding-top: 30px;">
+                            <a href="https://github.com/IT20011970/TeaBot-Documents/raw/main/Presentation/Progress_Presentation_2/Progress%20Presentation%202-%202023-044.pptx"> <i
+                                    class="fa fa-arrow-circle-down text-black-50" style="font-size: 30px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 portfolio-item second"
+                     style="display: flex; justify-content: center;">
+                    <div class="position-relative overflow-hidden mb-2"
+                         style="border: solid 2px #e5e8eb; height: 200px; border-radius:10px;width: 200px;">
+                        <!--                                <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">-->
+                        <!--                                <h1>Hello</h1>-->
+
+                        <div style="display: flex; justify-content: center;padding-top: 10px;">
+                            <h6>ICCCNT Presentation</h6>
+                        </div>
+                        <div style="display: flex; justify-content: center;padding-top: 20px;">
+                            <i class="fas fa-file-pdf fa-4x" style="color: rgba(126,119,119,0.59)"></i>
+                        </div>
+                        <div class="  d-flex align-items-center justify-content-center" style="padding-top: 30px;">
+                            <a href="https://github.com/lakizuru/TangiGuru-Research-Docs/raw/main/ICCCNT_Presentation.pdf"> <i
+                                    class="fa fa-arrow-circle-down text-black-50" style="font-size: 30px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 portfolio-item second"
+                     style="display: flex; justify-content: center;">
+                    <div class="position-relative overflow-hidden mb-2"
+                         style="border: solid 2px #e5e8eb; height: 200px; border-radius:10px;width: 200px;">
+                        <!--                                <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">-->
+                        <!--                                <h1>Hello</h1>-->
+
+                        <div style="display: flex; justify-content: center;padding-top: 10px;">
+                            <h6>ICAC Presentation</h6>
+                        </div>
+                        <div style="display: flex; justify-content: center;padding-top: 20px;">
+                            <i class="fas fa-file-pdf fa-4x" style="color: rgba(126,119,119,0.59)"></i>
+                        </div>
+                        <div class="  d-flex align-items-center justify-content-center" style="padding-top: 30px;">
+                            <a href="https://github.com/lakizuru/TangiGuru-Research-Docs/raw/main/ICAC_Presentation.pdf"> <i
+                                    class="fa fa-arrow-circle-down text-black-50" style="font-size: 30px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4 portfolio-item second"
+                     style="display: flex; justify-content: center;">
+                    <div class="position-relative overflow-hidden mb-2"
+                         style="border: solid 2px #e5e8eb; height: 200px; border-radius:10px;width: 200px;">
+                        <!--                                <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">-->
+                        <!--                                <h1>Hello</h1>-->
+
+                        <div style="display: flex; justify-content: center;padding-top: 10px;">
+                            <h6>Final Presentation</h6>
+                        </div>
+                        <div style="display: flex; justify-content: center;padding-top: 20px;">
+                            <i class="fas fa-file-pdf fa-4x" style="color: rgba(126,119,119,0.59)"></i>
+                        </div>
+                        <div class="  d-flex align-items-center justify-content-center" style="padding-top: 30px;">
+                            <a href="https://github.com/IT20011970/TeaBot-Documents/raw/main/Presentation/Final_Presentation/Final%20Viva%20slide.pptx"> <i
+                                    class="fa fa-arrow-circle-down text-black-50" style="font-size: 30px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--                research-->
+
+                <div class="col-lg-3 col-md-6 mb-4 portfolio-item third"
+                     style="display: flex; justify-content: center;">
+                    <div class="position-relative overflow-hidden mb-2"
+                         style="border: solid 2px #e5e8eb; height: 200px; border-radius:10px;width: 200px;">
+                        <!--                                <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">-->
+                        <!--                                <h1>Hello</h1>-->
+
+                        <div style="display: flex; justify-content: center;padding-top: 10px;">
+                            <h6>Research Paper</h6>
+                        </div>
+                        <div style="display: flex; justify-content: center;padding-top: 20px;">
+                            <i class="fas fa-file-pdf fa-4x" style="color: rgba(126,119,119,0.59)"></i>
+                        </div>
+                        <div class="  d-flex align-items-center justify-content-center" style="padding-top: 30px;">
+                            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal"
+                                    data-target="#exampleModalCenter5"
+                                    style="width: 25px;height: 25px; background-color: #7F7F7F; border:#7F7F7F; padding-bottom: 25px;padding-top: 0px;padding-left: 15px;padding-right: 15px;">
+                                <strong><span style="font-size: large; justify-content: center; display: flex">+</span></strong>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 mb-4 portfolio-item third"
+                     style="display: flex; justify-content: center;">
+                    <div class="position-relative overflow-hidden mb-2"
+                         style="border: solid 2px #e5e8eb; height: 200px; border-radius:10px;width: 200px;">
+                        <!--                                <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">-->
+                        <!--                                <h1>Hello</h1>-->
+                        <div style="display: flex; justify-content: center;padding-top: 10px;">
+                            <h6>Poster</h6>
+                        </div>
+                        <div style="display: flex; justify-content: center;padding-top: 20px;">
+                            <i class="fas fa-file-pdf fa-4x" style="color: rgba(126,119,119,0.59)"></i>
+                        </div>
+                        <div class="  d-flex align-items-center justify-content-center" style="padding-top: 30px;">
+                            <a href="https://github.com/IT20011970/TeaBot-Documents/raw/main/Poster/Poster.jpg"> <i
+                                    class="fa fa-arrow-circle-down text-black-50" style="font-size: 30px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Project ProposalModal for Project Proposal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Project Proposal Reports</h5>
+<!--                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                            <span aria-hidden="true">&times;</span>-->
+<!--                        </button>-->
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <ul>
+                                <div style="display: flex; justify-content: space-between">
+                                    <li><h6>IT19973470 | Gunawardana I.I.E.</h6></li>
+                                    <a href="https://github.com/IT20011970/TeaBot-Documents/raw/main/ProjectProposal/Project_Proposal_IT19973470.pdf">
+                                        <i
+                                                class="fa fa-arrow-circle-down text-black-50"
+                                                style="font-size: 20px;"></i></a>
+                                </div>
+
+                                <div style="display: flex; justify-content: space-between">
+                                    <li><h6>IT20011970 | Bamunusinghe G.P.</h6></li>
+                                    <a href="https://github.com/IT20011970/TeaBot-Documents/raw/main/ProjectProposal/Project_Proposal_IT20011970.pdf">
+                                        <i
+                                                class="fa fa-arrow-circle-down text-black-50"
+                                                style="font-size: 20px;"></i></a>
+                                </div>
+
+                                <div style="display: flex; justify-content: space-between">
+                                    <li><h6>IT20265410 | Premathilake H.T.M </h6></li>
+                                    <a href="https://github.com/IT20011970/TeaBot-Documents/raw/main/ProjectProposal/Project_Proposal_IT20265410.pdf">
+                                        <i
+                                                class="fa fa-arrow-circle-down text-black-50"
+                                                style="font-size: 20px;"></i></a>
+                                </div>
+
+                                <div style="display: flex; justify-content: space-between">
+                                    <li><h6>IT20382476 | Perera P.V.Y</h6></li>
+                                    <a href="https://github.com/IT20011970/TeaBot-Documents/raw/main/ProjectProposal/Project_Proposal_IT20382476.pdf">
+                                        <i
+                                                class="fa fa-arrow-circle-down text-black-50"
+                                                style="font-size: 20px;"></i></a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <!--                        <button type="button" class="btn btn-primary">Save changes</button>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Status Doc 1 -->
+        <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog"
+             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle1">Status Document 1</h5>
+<!--                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                            <span aria-hidden="true">&times;</span>-->
+<!--                        </button>-->
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <ul>
+                                <div style="display: flex; justify-content: space-between">
+                                    <li><h6>IT19973470 | Gunawardana I.I.E.</h6></li>
+                                    <a href="https://github.com/IT20011970/TeaBot-Documents/raw/main/Status%20Document%201/IT19973470.pdf">
+                                        <i
+                                                class="fa fa-arrow-circle-down text-black-50"
+                                                style="font-size: 20px;"></i></a>
+                                </div>
+
+                                <div style="display: flex; justify-content: space-between">
+                                    <li><h6>IT20011970 | Bamunusinghe G.P.</h6></li>
+                                    <a href="https://github.com/IT20011970/TeaBot-Documents/raw/main/Status%20Document%201/IT20011970.pdf">
+                                        <i
+                                                class="fa fa-arrow-circle-down text-black-50"
+                                                style="font-size: 20px;"></i></a>
+                                </div>
+
+                                <div style="display: flex; justify-content: space-between">
+                                    <li><h6>IT20265410 | Premathilake H.T.M </h6></li>
+                                    <a href="https://github.com/IT20011970/TeaBot-Documents/raw/main/Status%20Document%201/IT20265410.pdf">
+                                        <i
+                                                class="fa fa-arrow-circle-down text-black-50"
+                                                style="font-size: 20px;"></i></a>
+                                </div>
+                                <div style="display: flex; justify-content: space-between">
+                                    <li><h6>IT20382476 | Perera P.V.Y</h6></li>
+                                    <a href="https://github.com/IT20011970/TeaBot-Documents/raw/main/Status%20Document%201/IT20382476.pdf">
+                                        <i
+                                                class="fa fa-arrow-circle-down text-black-50"
+                                                style="font-size: 20px;"></i></a>
+                                </div>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <!--                        <button type="button" class="btn btn-primary">Save changes</button>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Final Report -->
+        <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog"
+             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle2">Final Report</h5>
+<!--                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                            <span aria-hidden="true">&times;</span>-->
+<!--                        </button>-->
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <ul>
+                                <div style="display: flex; justify-content: space-between">
+                                    <li><h6>IT19973470 | Gunawardana I.I.E.</h6></li>
+                                    <a href="https://github.com/IT20011970/TeaBot-Documents/raw/main/Final_Reports/IT19973470.pdf">
+                                        <i
+                                                class="fa fa-arrow-circle-down text-black-50"
+                                                style="font-size: 20px;"></i></a>
+                                </div>
+                                <div style="display: flex; justify-content: space-between">
+                                    <li><h6>IT20011970 | Bamunusinghe G.P.</h6></li>
+                                    <a href="https://github.com/IT20011970/TeaBot-Documents/raw/main/Final_Reports/IT20011970.pdf">
+                                        <i
+                                                class="fa fa-arrow-circle-down text-black-50"
+                                                style="font-size: 20px;"></i></a>
+                                </div>
+
+                                <div style="display: flex; justify-content: space-between">
+                                    <li><h6>IT20265410 | Premathilake H.T.M </h6></li>
+                                    <a href="https://github.com/IT20011970/TeaBot-Documents/raw/main/Final_Reports/IT20265410.pdf">
+                                        <i
+                                                class="fa fa-arrow-circle-down text-black-50"
+                                                style="font-size: 20px;"></i></a>
+                                </div>
+
+                                <div style="display: flex; justify-content: space-between">
+                                    <li><h6>IT20382476 | Perera P.V.Y</h6></li>
+                                    <a href="https://github.com/IT20011970/TeaBot-Documents/raw/main/Final_Reports/IT20382476.pdf">
+                                        <i
+                                                class="fa fa-arrow-circle-down text-black-50"
+                                                style="font-size: 20px;"></i></a>
+                                </div>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <!--                        <button type="button" class="btn btn-primary">Save changes</button>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Status Document 2 -->
+        <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog"
+             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle3">Status Document 2</h5>
+<!--                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                            <span aria-hidden="true">&times;</span>-->
+<!--                        </button>-->
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <ul>
+                                <div style="display: flex; justify-content: space-between">
+                                    <li><h6>IT19973470 | Gunawardana I.I.E.</h6></li>
+                                    <a href="https://github.com/IT20011970/TeaBot-Documents/raw/main/Status%20Document%202/IT19973470.pdf">
+                                        <i
+                                                class="fa fa-arrow-circle-down text-black-50"
+                                                style="font-size: 20px;"></i></a>
+                                </div>
+
+                                <div style="display: flex; justify-content: space-between">
+                                    <li><h6>IT20011970 | Bamunusinghe G.P.</h6></li>
+                                    <a href="https://github.com/IT20011970/TeaBot-Documents/raw/main/Status%20Document%202/IT20011970.pdf">
+                                        <i
+                                                class="fa fa-arrow-circle-down text-black-50"
+                                                style="font-size: 20px;"></i></a>
+                                </div>
+
+                                <div style="display: flex; justify-content: space-between">
+                                    <li><h6>IT20265410 | Premathilake H.T.M </h6></li>
+                                    <a href="https://github.com/IT20011970/TeaBot-Documents/raw/main/Status%20Document%202/IT20265410.pdf">
+                                        <i
+                                                class="fa fa-arrow-circle-down text-black-50"
+                                                style="font-size: 20px;"></i></a>
+                                </div>
+
+                                <div style="display: flex; justify-content: space-between">
+                                    <li><h6>IT20382476 | Perera P.V.Y</h6></li>
+                                    <a href="https://github.com/IT20011970/TeaBot-Documents/raw/main/Status%20Document%202/IT20382476.pdf">
+                                        <i
+                                                class="fa fa-arrow-circle-down text-black-50"
+                                                style="font-size: 20px;"></i></a>
+                                </div>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <!--                        <button type="button" class="btn btn-primary">Save changes</button>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Status Document 2 -->
+        <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog"
+             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle4">Log Book</h5>
+<!--                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                            <span aria-hidden="true">&times;</span>-->
+<!--                        </button>-->
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <ul>
+                                <div style="display: flex; justify-content: space-between">
+                                    <li><h6>IT19973470 | Gunawardana I.I.E.</h6></li>
+                                    <a href="https://github.com/IT20011970/TeaBot-Documents/raw/main/Log_Book/IT19973470.pdf">
+                                        <i
+                                                class="fa fa-arrow-circle-down text-black-50"
+                                                style="font-size: 20px;"></i></a>
+                                </div>
+
+                                <div style="display: flex; justify-content: space-between">
+                                    <li><h6>IT20011970 | Bamunusinghe G.P.</h6></li>
+                                    <a href="https://github.com/IT20011970/TeaBot-Documents/raw/main/Log_Book/IT20011970.pdf">
+                                        <i
+                                                class="fa fa-arrow-circle-down text-black-50"
+                                                style="font-size: 20px;"></i></a>
+                                </div>
+
+                                <div style="display: flex; justify-content: space-between">
+                                    <li><h6>IT20265410 | Premathilake H.T.M </h6></li>
+                                    <a href="https://github.com/IT20011970/TeaBot-Documents/raw/main/Log_Book/IT20265410.pdf">
+                                        <i
+                                                class="fa fa-arrow-circle-down text-black-50"
+                                                style="font-size: 20px;"></i></a>
+                                </div>
+
+                                <div style="display: flex; justify-content: space-between">
+                                    <li><h6>IT20382476 | Perera P.V.Y</h6></li>
+                                    <a href="https://github.com/IT20011970/TeaBot-Documents/raw/main/Log_Book/IT20382476.pdf">
+                                        <i
+                                                class="fa fa-arrow-circle-down text-black-50"
+                                                style="font-size: 20px;"></i></a>
+                                </div>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <!--                        <button type="button" class="btn btn-primary">Save changes</button>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Status Document 2 -->
+        <div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog"
+             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle5">Research Paper</h5>
+<!--                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                            <span aria-hidden="true">&times;</span>-->
+<!--                        </button>-->
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <ul>
+                                <div style="display: flex; justify-content: space-between">
+                                    <li><h6>13<sup>th</sup> ICCCNT </h6></li>
+                                    <a href="https://github.com/lakizuru/TangiGuru-Research-Docs/raw/main/Research_Paper/Tangiguru_ICCCNT.pdf">
+                                        <i
+                                                class="fa fa-arrow-circle-down text-black-50"
+                                                style="font-size: 20px;"></i></a>
+                                </div>
+
+                                <div style="display: flex; justify-content: space-between">
+                                    <li><h6>04<sup>th</sup> ICAC </h6></li>
+                                    <a href="https://github.com/lakizuru/TangiGuru-Research-Docs/raw/main/Research_Paper/Tangiguru_ICAC.pdf">
+                                        <i
+                                                class="fa fa-arrow-circle-down text-black-50"
+                                                style="font-size: 20px;"></i></a>
+                                </div>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <!--                        <button type="button" class="btn btn-primary">Save changes</button>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+<!-- Footer Start -->
+<div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+    <div class="container text-center py-5">
+        <div class="d-flex justify-content-center mb-4">
+            <a class="btn btn-light btn-social mr-2" href="https://www.youtube.com/channel/UCAZADwrZ4lsisaOQjfBrTAQ"><i class="fab fa-youtube"></i></a>
+            <a class="btn btn-light btn-social mr-2" href="https://www.facebook.com/TangiGuru"><i class="fab fa-facebook-f"></i></a>
+            <!--            <a class="btn btn-light btn-social mr-2" href="#"><i class= "fa-brands fa-kickstarter"></i></a>-->
+<!--            <a class="btn btn-light btn-social" href="#"><i class="fa-tiktok"></i></a>-->
+        </div>
+        <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">TeaBot</a>. All Rights Reserved.
+        </p>
+    </div>
+</div>
+<!-- Footer End -->
+
+<!-- Scroll to Bottom -->
+<i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="lib/typed/typed.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/isotope/isotope.pkgd.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+
+
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+</body>
+
 
 </html>
